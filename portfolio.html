@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuarul Islam | Portfolio</title>
+    <style>
+        :root {
+            --primary: #00ffcc;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        h1 { font-size: 3rem; color: var(--primary); margin-bottom: 0.5rem; }
+        .subtitle { font-size: 1.5rem; opacity: 0.9; }
+
+        section { padding: 4rem 0; border-bottom: 1px solid #334155; }
+        h2 { color: var(--primary); border-left: 4px solid var(--primary); padding-left: 10px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); padding: 1.5rem; border-radius: 8px; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+
+        .skill-tag {
+            display: inline-block;
+            background: rgba(0, 255, 204, 0.1);
+            color: var(--primary);
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+            border: 1px solid var(--primary);
+        }
+
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; opacity: 0.7; }
+        
+        .contact-link { color: var(--primary); text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Manuarul Islam</h1>
+        <p class="subtitle">IT Professional | Cybersecurity Enthusiast | Drone Pilot</p>
+        <p>Malda, India</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>Summary</h2>
+            <p>A highly motivated and detail-oriented IT graduate with a strong foundation in programming and software development[cite: 17]. Eager to leverage technical expertise in Python, C++, and C to solve real-world IT challenges[cite: 18, 19].</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <h3>BSc in Computer Science</h3>
+                <p><strong>Gour Banga University (2019-2022)</strong> [cite: 6]</p>
+                <p>Overall Grade: A+ [cite: 6]</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Toolkit</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Development</h3>
+                    <span class="skill-tag">C</span> <span class="skill-tag">C++</span> 
+                    <span class="skill-tag">Python</span> <span class="skill-tag">HTML</span> 
+                    <span class="skill-tag">SQL</span> [cite: 11, 18]
+                </div>
+                <div class="card">
+                    <h3>Systems & Security</h3>
+                    <span class="skill-tag">Linux OS</span> <span class="skill-tag">Networking</span> 
+                    <span class="skill-tag">Metasploit</span> <span class="skill-tag">Encryption</span> 
+                    <span class="skill-tag">IoT</span> [cite: 9, 10, 11, 23]
+                </div>
+                <div class="card">
+                    <h3>Other Expertise</h3>
+                    <span class="skill-tag">Drone Pilot</span> <span class="skill-tag">Social Media Marketing</span> 
+                    <span class="skill-tag">IT Support</span> [cite: 8, 18, 27]
+                </div>
+            </div>
+        </section>
+
+       <section id="experience">
+            <h2>Experience</h2>
+            <div class="card">
+                <h3>Apprentice (Non-Tech)</h3>
+                <p><strong>CSIR-CGCRI</strong></p>
+                <p><em>July 2024 – July 2025</em> [cite: 21]</p>
+                <p>Completed a one-year apprenticeship focusing on organizational operations and professional development.</p>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>Key Projects & Certifications</h2>
+            <ul>
+                <li><strong>Metasploit Framework:</strong> Gained access over a Windows System[cite: 23].</li>
+                <li><strong>Hacking Project:</strong> Major project on hacking an offline device[cite: 24].</li>
+                <li><strong>IIT Kharagpur:</strong> Participated in Google Developers Workshop[cite: 30].</li>
+                <li><strong>Professional Training:</strong> 21st Century Employability Skilling (PBSSD & Wadhwani Foundation)[cite: 25, 26].</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>📧 Email: <a href="mailto:manuarulislam0@gmail.com" class="contact-link">manuarulislam0@gmail.com</a> [cite: 3]</p>
+            <p>📞 Phone: 6297176931 [cite: 2]</p>
+            <p>📍 Location: Malda, India 732102 [cite: 4]</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Manuarul Islam. Built with passion and code.</p>
+    </footer>
+
+</body>
+</html>
